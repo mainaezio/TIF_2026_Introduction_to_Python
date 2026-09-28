@@ -7817,9 +7817,9 @@ a.anchor-link {
 <h2 id="Jupyter-Lab/Notebook">Jupyter Lab/Notebook<a class="anchor-link" href="#Jupyter-Lab/Notebook">¶</a></h2><p>Per eseguire comandi di Python, noi useremo una interfaccia potente, il Jupyter Lab che permette, tra l'altro, di operare su uno o più Jupyter Notebook. Ciascun notebook è diviso in celle. I due tipi di celle che ci interessano sono quelle di tipo <code>Code</code> dove si possono scrivere ed eseguire comandi, e quelle di tipo <code>Markdown</code> che contengono testo.
 Mescolare celle eseguibili e celle di testo in cui spiegare il procedimento che si sta
 utilizzando oppure dare informazioni per rendere comprensibile il codice permette di creare dei documenti interattivi.<br/></p>
-<p>Per selezionare una cella, cliccate nella finestra. Comparire un bordino blu sulla sinistra.
+<p>Per selezionare una cella, cliccate nella finestra. Compare un bordino blu sulla sinistra.
 Quando una cella eseguibile è selezionata il codice che contiene può essere modificato.
-Per eseguire la cella, schiacciate tenete premuto il tasto Shift(Maiusc) e premete il tasto Enter(Invio).<br/>
+Per eseguire la cella, tenete premuto il tasto Shift(Maiusc) e schiacciate il tasto Enter(Invio).<br/>
 La possibilità di eseguire pochi comandi alla volta è uno dei punti di forza di Jupyter.<br/>
 Per vedere o modificare il formato originale delle celle di testo, cliccate due volte nella finestra. Per tornare alla versione graficamente migliore per la lettura sullo schermo, schiacciate Shift-Enter.
 Lo stile delle celle di testo può essere specificato usando comandi Markdown e/o Latex.</p>
@@ -7837,8 +7837,8 @@ Per eseguire la cella, tenete premuto il tasto Shift(Maiusc) e premete il tasto 
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h4 id="Regole-base-per-scrivere-comandi-in-Python:">Regole base per scrivere comandi in Python:<a class="anchor-link" href="#Regole-base-per-scrivere-comandi-in-Python:">¶</a></h4><ul>
 <li>Ritorno a capo (Enter/Invio) conclude un comando</li>
-<li>Comandi multilinea possono essere inseriti usando il carattere di continuazine <code>\</code> (modo scoraggiato)</li>
-<li>Comandi multilinea possono essere inseriti racchiudendo i comandi fra parentesi tonde (modo preferito)</li>
+<li>Comandi multilinea possono essere inseriti usando il carattere di continuazione <code>\</code> (modo scoraggiato)</li>
+<li>Comandi multilinea possono essere inseriti racchiudendo le espressioni fra parentesi tonde (modo preferito)</li>
 </ul>
 </div>
 </div>
@@ -7928,10 +7928,51 @@ Il risultato dell'ultimo comando viene stampato sullo schermo (a meno che venga 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Comandi multilinea:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="mi">37</span> <span class="o">+</span> <span class="mi">5</span> \
+<span class="o">-</span><span class="mi">10</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="p">(</span> <span class="mi">37</span> <span class="o">+</span> <span class="mi">5</span> 
+  <span class="o">-</span><span class="mi">10</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Operazioni-elementari">Operazioni elementari<a class="anchor-link" href="#Operazioni-elementari">¶</a></h2><p>Le operazioni elementari come l'addizione (<code>+</code>), sottrazione (<code>-</code>), moltiplicazione (<code>*</code>), divisione (<code>/</code>) e esponenziazione (<code>**</code>) funzionano come ci si aspetta.</p>
 <div style="width:95%; padding:5px 10px 5px; border-style:solid; border-width:0px 0px 0px 10px; border-color:#ff0000; margin:20px 0px 10px 10px">
 <h4> Attenzione!</h4>
-    In un numero reale, il carattere che separa la parte intera da quella decimale è il punto `.`, non la virgola `,`!
+<p>In un numero reale, il carattere che separa la parte intera da quella decimale è il punto <code>.</code>, non la virgola <code>,</code>!</p>
 </div>
 </div>
 </div>
@@ -7975,6 +8016,17 @@ Il risultato dell'ultimo comando viene stampato sullo schermo (a meno che venga 
 <div class="highlight hl-ipython3"><pre><span></span><span class="mi">47</span> <span class="o">*</span> <span class="mi">11</span>
 </pre></div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Non è possibile omettere il simbolo di moltiplicazione come si fa abitualmente in algebra.</p>
 </div>
 </div>
 </div>
@@ -8040,6 +8092,173 @@ Il risultato dell'ultimo comando viene stampato sullo schermo (a meno che venga 
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="mi">3</span><span class="o">**</span><span class="mf">0.5</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>In Fisica si utilizza spesso la notazione scientifica:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="mf">3.1e3</span>         <span class="c1"># 3.1*10**3</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="mf">2.2e-3</span>        <span class="c1"># 2.2*10**-3</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Dati due numeri <code>a</code> e <code>b</code>, <code>a % b</code> fornisce il modulo di <code>a</code> rispetto a <code>b</code> cioè il resto della divisione di <code>a</code> per <code>b</code>.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="mi">8</span> <span class="o">%</span> <span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="mi">100</span> <span class="o">%</span> <span class="mi">9</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Funziona anche con interi negativi</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">-</span><span class="mi">7</span> <span class="o">%</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>e con numeri reali</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="mf">3.14</span> <span class="o">%</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Se <code>a</code> e <code>b</code> sono interi, <code>a // b</code> restituisce il risultato della divisione di <code>a</code> per <code>b</code> arrotondato verso il basso.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="mi">9</span> <span class="o">//</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">-</span><span class="mi">7</span> <span class="o">//</span> <span class="mi">2</span>
 </pre></div>
 </div>
 </div>
@@ -8128,6 +8347,17 @@ Il risultato dell'ultimo comando viene stampato sullo schermo (a meno che venga 
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div style="font-size:18px">Esempi</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8202,6 +8432,59 @@ Il risultato dell'ultimo comando viene stampato sullo schermo (a meno che venga 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Prevedete il risultato prima di eseguire. Se la previsione si rivela errata, trovate la spiegazione.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">-</span><span class="mi">2</span><span class="o">**</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="mi">2</span><span class="o">**</span><span class="mi">3</span><span class="o">**</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="mi">18</span><span class="o">/</span><span class="mi">3</span><span class="o">*</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div style="width:95%; padding:5px 10px 5px; border-style:solid; border-width:0px 0px 0px 10px; border-color:#b8d0d0; margin:20px 0px 10px 10px">
 <h4> Imparare Facendo</h4>
 <ol>
@@ -8221,70 +8504,6 @@ Il risultato dell'ultimo comando viene stampato sullo schermo (a meno che venga 
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Funzioni-intrinseche">Funzioni intrinseche<a class="anchor-link" href="#Funzioni-intrinseche">¶</a></h2><p>Sono funzioni sempre disponibili in Python. Per esempio, le funzioni che trasformano una variabile da un tipo ad un altro (Si veda <a href="03_Tipi_di_Dati.ipynb">03_Tipi_di_Dati.ipynb</a>) oppure <code>max</code>, <code>min</code>,<code>abs</code>. La lista completa delle funzioni intrinseche si trova in <a href="https://docs.python.org/3/library/functions.html">Built-in functions</a>.<br/>
 Qualche esempio:</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Se <code>a</code> e <code>b</code> sono interi, <code>a % b</code> fornisce il modulo di <code>a</code> rispetto a <code>b</code> cioè il resto della divisione di <code>a</code> per <code>b</code>.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="mi">8</span> <span class="o">%</span> <span class="mi">5</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="mi">100</span> <span class="o">%</span> <span class="mi">9</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Se <code>a</code> e <code>b</code> sono interi, <code>a // b</code> fornisce la parte intera di <code>a/b</code>.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="mi">9</span> <span class="o">//</span> <span class="mi">2</span>
-</pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -8334,8 +8553,8 @@ Qualche esempio:</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Funzioni-Matematiche">Funzioni Matematiche<a class="anchor-link" href="#Funzioni-Matematiche">¶</a></h2><p>La quasi totalità delle funzioni in Python sono contenute in librerie dette <strong>moduli</strong> che devono essere <strong>importati</strong> per poter utilizzare le funzioni al loro interno. Vanno importate solo le librerie che vengono utilizzate.
-Le funzioni matematiche più comuni e molte altre si trovano in un <strong>modulo</strong> chiamato <code>math</code>. Per esempio le funzioni trigonometriche come seno (<code>sin</code>), coseno (<code>cos</code>), tangente (<code>tan</code>) con le loro inverse <code>asin</code>, <code>acos</code>, <code>atan</code>; la radice quadrata (<code>sqrt</code>), la funzione esponenziale (<code>exp</code>) e il logaritmo (<code>log</code>) . Prima di utilizzare le funzioni contenute in <code>math</code>, dobbiamo <em>importare</em> il modulo. La chiamata ad una funzione contenuta in un modulo ha la sintassi:<code>nome_modulo.nome_funzione(argomento)</code>:</p>
+<h2 id="Funzioni-Matematiche">Funzioni Matematiche<a class="anchor-link" href="#Funzioni-Matematiche">¶</a></h2><p>Molte funzionalità stanno nella libreria standard o in pacchetti esterni, detti <strong>moduli</strong>, che devono essere <strong>importati</strong> per poter utilizzare le funzioni al loro interno. Vanno importate solo le librerie che vengono effettivamente utilizzate.
+Le funzioni matematiche più comuni e molte altre si trovano in un <strong>modulo</strong> chiamato <code>math</code>. Per esempio le funzioni trigonometriche come seno (<code>sin</code>), coseno (<code>cos</code>), tangente (<code>tan</code>) con le loro inverse <code>asin</code>, <code>acos</code>, <code>atan</code>; la radice quadrata (<code>sqrt</code>), la funzione esponenziale (<code>exp</code>) e il logaritmo (<code>log</code>) . Prima di utilizzare le funzioni contenute in <code>math</code>, dobbiamo <code>importare</code> il modulo. La chiamata ad una funzione contenuta in un modulo ha la sintassi:<code>nome_modulo.nome_funzione(argomento)</code>:</p>
 </div>
 </div>
 </div>
@@ -8449,7 +8668,7 @@ Le funzioni matematiche più comuni e molte altre si trovano in un <strong>modul
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mf">37.79</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">help</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -8548,9 +8767,10 @@ Le funzioni matematiche più comuni e molte altre si trovano in un <strong>modul
 <li>Calcolate il seno di $\pi/3$. Calcolate il seno di $2 \pi/3$.
 <li>Calcolate il coseno iperbolico del logaritmo naturale di 133.
 <li>Calcolate la somma del coseno al quadrato di 43 e del seno al quadrato di 43.
-<li>Calcolate la differenza fra il coseno iperbolico al quadrato di 77 e il seno iperbolico al quadrato di 77.<br/>
-    Quanto deve valere $cosh(x)^2 - sinh(x)^2$ qualunque sia $x$?<br/>
-    Calcolate la differenza fra il coseno iperbolico al quadrato di 1/2 e il seno iperbolico al quadrato di 1/2.
+<li>Quanto deve valere $\cosh (x)^2 - \sinh (x)^2$ qualunque sia $x$?<br/>
+    Calcolate la differenza fra il coseno iperbolico al quadrato di 1/2 e il seno iperbolico al quadrato di 1/2.<br/>
+    Calcolate la differenza fra il coseno iperbolico al quadrato di 77 e il seno iperbolico al quadrato di 77.<br/>
+    Cercate in rete o fatevi spiegare da una AI perché il risultato numerico viola la regola generale.
 <li>Cercate informazioni sulla funzione <b>degrees</b> usando <b>help</b>.
 <li>Cercate informazioni sulla funzione <b>factorial</b> usando <b>help</b>.
 <li>Calcolate il fattoriale di 0.47 . 
@@ -8579,7 +8799,7 @@ Le funzioni matematiche più comuni e molte altre si trovano in un <strong>modul
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Variabili">Variabili<a class="anchor-link" href="#Variabili">¶</a></h2><p>Una variabile è un'area di memoria associata a un nome simbolico (identificatore) che contiene un oggetto, per esempio un singolo valore oppure una collezione di valori.
+<h2 id="Variabili">Variabili<a class="anchor-link" href="#Variabili">¶</a></h2><p>Una variabile è un nome simbolico  (identificatore) associato a  un'area di memoria che contiene un oggetto, per esempio un singolo valore oppure una collezione di valori.
 In pratica, una variabile rappresenta un'entità dati che può cambiare nel corso dell'esecuzione di un programma. Una variabile viene creata attraverso una assegnazione.
 <br/> <br/>
 <strong>La struttura di una assegnazione è sempre: <code>nome_variabile = valore</code>.</strong>
@@ -8588,6 +8808,7 @@ In pratica, una variabile rappresenta un'entità dati che può cambiare nel cors
 <br/> <br/>
 I nomi delle variabili possono contenere solo i caratteri a-z, A-Z, 0-9 e l'underscore "_".
 Il primo carattere del nome di una variabile non può essere un numero. <code>a1b_</code> è legale; <code>x+1</code>,<code>1a</code> e <code>a(cd</code> non lo sono.</p>
+<p>Esistono alcune <code>parole riservate</code> che non possono essere usate come nomi di variabili, per esempio <code>lambda</code>. È poi sconsigliato usare come nomi di variabili i nomi di funzioni intrinsiche di Python come <code>sum, max, min</code>.</p>
 </div>
 </div>
 </div>
@@ -8612,9 +8833,8 @@ Il primo carattere del nome di una variabile non può essere un numero. <code>a1
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Quando la cella precedente viene eseguita, per prima cosa, Python crea l'oggetto 0.5. Tutto in Python è un oggetto, e quindi lo è anche il numero reale (floating point) 0.5. Questo oggetto viene immagazzinato da qualche parte in memoria. Poi Python lega un nome all'oggetto (binds a name to the object). Il nome è <code>x</code>, e spesso ci si riferisce a <code>x</code> come a una variabile, un oggetto, o persino il valore 0.5. Tuttavia, tecnicamente, è <code>x</code>  il nome che è legato all'oggetto <code>0.5</code>. Un altro modo per dirlo è che <code>x</code> è una referenza (reference) all'oggetto.</p>
-<p>Mentre in genere è sufficiente pensare di assegnare <code>0.5</code> alla variabile <code>x</code>, ci sono situazioni in cui è necessario ricordarsi di quello che effettivamente succede. In particolare, quando passiamo, come argomento a delle funzioni, delle reference a oggetti , dobbiamo essere coscienti che le funzioni possono agire sull'oggetto piuttosto che su una copia dell'oggetto. Tutto questo verrà esaminato con maggiori dettagli in 06_funzioni_moduli.</p>
-<p>Una volta che la variabile <code>x</code> è stata creata assegnandogli il valore 0.5, come nell'esempio, possiamo utilizzarla in ulteriori comandi:</p>
+<p>Quando la cella precedente viene eseguita, per prima cosa, Python crea l'oggetto 0.5. Tutto in Python è un oggetto, e quindi lo è anche il numero reale (floating point) 0.5. Questo oggetto viene immagazzinato da qualche parte in memoria. Poi Python lega un nome all'oggetto (binds a name to the object). Il nome è <code>x</code>, e spesso ci si riferisce a <code>x</code> come a una variabile, un oggetto, o persino il valore 0.5. Tuttavia, tecnicamente, <code>x</code> è  il nome che è legato all'oggetto <code>0.5</code>. Un altro modo per dirlo è che <code>x</code> è una referenza (reference) all'oggetto.</p>
+<p>Una volta che la variabile <code>x</code> è stata creata assegnandole il valore 0.5, come nell'esempio, possiamo utilizzarla in ulteriori comandi:</p>
 </div>
 </div>
 </div>
@@ -8646,19 +8866,32 @@ Il primo carattere del nome di una variabile non può essere un numero. <code>a1
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">width</span> <span class="o">=</span> <span class="mi">20</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">width</span> <span class="o">=</span> <span class="mi">20</span>    <span class="c1"># Le unit&amp;agrave; non vengono esplicitate pur essendo indispensabili in Fisica</span>
 <span class="n">height</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">9</span>
 <span class="n">area</span> <span class="o">=</span> <span class="n">width</span> <span class="o">*</span> <span class="n">height</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Area ="</span><span class="p">,</span> <span class="n">area</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Area = 900
+</pre>
 </div>
 </div>
 </div>
@@ -8781,7 +9014,7 @@ Il primo carattere del nome di una variabile non può essere un numero. <code>a1
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_Raises-Exception">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8856,8 +9089,9 @@ Il primo carattere del nome di una variabile non può essere un numero. <code>a1
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div style="width:95%; padding:5px 10px 5px; border-style:solid; border-width:0px 0px 0px 10px; border-color:#b8d0d0; margin:20px 0px 10px 10px">
-<h4> Imparare Facendo</h4>
-<ol start="9">
+<h4> Imparare (Jupyter) Facendo</h4>
+<!-- <OL start="9"> -->
+<ol>
 <li>Assegnate il cubo di 17 alla variabile <b>temp</b>.
 <li>Eseguite la cella.
 <li>Aggiungete alla cella il comando di stampare <b>temp</b>.
@@ -8934,8 +9168,9 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'valore originale di x: '</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'nuovo valore di x: '</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -9131,7 +9366,7 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 <ul>
 <li><p>La funzione inizia con la keyword <code>def</code>, seguita dal nome che assegnamo alla funzione, dalla lista, tra parentesi, degli argomenti che devono essere passati alla funzione quando questa viene eseguita e dal simbolo <code>:</code> che chiude la dichiarazione della funzione.</p>
 </li>
-<li><p>Tutto il corpo della funzione, l'insieme delle operazioni che devono essere eseguite sugli argomenti in input, devo essere indentati di quattro spazi rispetto alla keyword <code>def</code>.</p>
+<li><p>Tutto il corpo della funzione, l'insieme delle operazioni che devono essere eseguite sugli argomenti in input, deve essere indentato di quattro spazi rispetto alla keyword <code>def</code>.</p>
 </li>
 <li><p>La definizione della funzione si conclude quando il codice smette di essere indentato.</p>
 </li>
@@ -9147,7 +9382,7 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 </ul>
 <div class="highlight"><pre><span></span>    <span class="k">return</span> <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre></div>
-<p>        stampa il valore della variabile <code>a</code> sullo schermo ma restituisce <code>None</code> (v. Sez "Un errore comune").</p>
+<p>stampa il valore della variabile <code>a</code> sullo schermo ma restituisce <code>None</code> (v. Sez "Un errore comune").</p>
 </div>
 </div>
 </div>
@@ -9165,7 +9400,7 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_Raises-Exception">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9187,19 +9422,7 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>La terminologia di Allen Downey (nel suo libro <a href="http://www.greenteapress.com/thinkpython/html/index.html">Think Python</a>) di funzioni fruttuose e infruttuose distingue fra funzioni che ritornano un valore (=fruitful) e quelle che non lo fanno (=fruitless). Se una funzione non usa il comando <code>return</code>, diciamo che non ritorna nulla (In realtà ritorna sempre l'oggetto <code>None</code> – anche se il comando <code>return</code> manca).</p>
-<p>Per esempio, la funzione <code>greeting</code>, quando viene chiamata, stampa “Hello World” (ed è fruitless perché</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>La terminologia di Allen Downey (nel suo libro <a href="http://www.greenteapress.com/thinkpython/html/index.html">Think Python</a>) di funzioni fruttuose e infruttuose distingue fra funzioni che ritornano un valore (=fruitful) e quelle che non lo fanno (=fruitless). Se una funzione non usa il comando <code>return</code>, diciamo che non ritorna nulla (In realtà ritorna sempre l'oggetto <code>None</code> – anche se il comando <code>return</code> manca).</p>
+<p>La terminologia di Allen Downey (nel suo libro <a href="https://allendowney.github.io/ThinkPython/">Think Python</a>) di funzioni fruttuose e infruttuose distingue fra funzioni che ritornano un valore (=fruitful) e quelle che non lo fanno (=fruitless). Se una funzione non usa il comando <code>return</code>, diciamo che non ritorna nulla (In realtà ritorna sempre l'oggetto <code>None</code> – anche se il comando <code>return</code> manca).</p>
 <p>Per esempio, la funzione <code>greeting</code>, quando viene chiamata, stampa “Hello World” (ed è fruitless perché non ritorna alcun valore).</p>
 </div>
 </div>
@@ -9251,7 +9474,8 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>stampa “Hello World” su stdout (lo <em>standard output</em>, in questo caso la nostra finestra), come ci si aspetta. Se assegnamo il return value della funzione a una variabile <code>x</code>, la possiamo successivamente esaminare/utilizzare:</p>
+<p>stampa “Hello World” su stdout (lo <em>standard output</em>, in questo caso la nostra finestra), come ci si aspetta.</p>
+<p>Se assegnamo il return value della funzione a una variabile <code>x</code>, la possiamo successivamente esaminare/utilizzare:</p>
 </div>
 </div>
 </div>
@@ -9263,7 +9487,8 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">greeting</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">3</span><span class="o">*</span><span class="n">x</span>
 </pre></div>
 </div>
 </div>
@@ -9277,7 +9502,51 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">f</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">Se</span> <span class="n">omettiamo</span> <span class="n">di</span> <span class="n">restituire</span> <span class="n">un</span> <span class="n">valore</span> <span class="n">non</span> <span class="n">la</span> <span class="n">possiamo</span> <span class="n">successivamente</span> <span class="n">esaminare</span><span class="o">/</span><span class="n">utilizzare</span><span class="p">:</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_Raises-Exception">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">g</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -9290,7 +9559,7 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>confermandondo che la funzione <code>greeting</code> ha effettivamente ritornato l'oggetto <code>None</code>.</p>
+<p>dà errore</p>
 </div>
 </div>
 </div>
@@ -9431,7 +9700,7 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">my_half_pi</span><span class="p">():</span>
-    <span class="k">return</span> <span class="mf">3.141592653589793</span><span class="o">/</span><span class="mf">2.</span>
+    <span class="k">return</span> <span class="mf">3.141592653589793</span><span class="o">/</span><span class="mi">2</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">my_half_pi</span><span class="p">())</span>
 </pre></div>
@@ -9457,7 +9726,7 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Esempio-3">Esempio 3<a class="anchor-link" href="#Esempio-3">¶</a></h4><p>Una funzione che restituisce due valori:</p>
+<h4 id="Esempio-3">Esempio 3<a class="anchor-link" href="#Esempio-3">¶</a></h4><p>Una funzione che restituisce due valori (in una <code>ntupla</code> <a href="06_Funzioni_Moduli.ipynb">06_Funzioni_Moduli.ipynb</a>):</p>
 </div>
 </div>
 </div>
@@ -9470,9 +9739,9 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">my_sum_dif</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
-    <span class="nb">sum</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-    <span class="n">dif</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
-    <span class="k">return</span> <span class="nb">sum</span><span class="p">,</span> <span class="n">dif</span>
+    <span class="n">my_sum</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+    <span class="n">my_dif</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+    <span class="k">return</span> <span class="n">my_sum</span><span class="p">,</span> <span class="n">my_dif</span>
 </pre></div>
 </div>
 </div>
@@ -9531,14 +9800,14 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">my_sol_eq2</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
-    <span class="n">disc</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">b</span><span class="o">*</span><span class="n">b</span> <span class="o">-</span> <span class="mf">4.</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span>
-    <span class="n">sol1</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">b</span> <span class="o">+</span> <span class="n">disc</span><span class="p">)</span><span class="o">/</span><span class="mf">2.</span><span class="o">/</span><span class="n">a</span>
-    <span class="n">sol2</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">b</span> <span class="o">-</span> <span class="n">disc</span><span class="p">)</span><span class="o">/</span><span class="mf">2.</span><span class="o">/</span><span class="n">a</span>
+    <span class="n">disc</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">b</span><span class="o">*</span><span class="n">b</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span>
+    <span class="n">sol1</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">b</span> <span class="o">+</span> <span class="n">disc</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">a</span>
+    <span class="n">sol2</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">b</span> <span class="o">-</span> <span class="n">disc</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">a</span>
     <span class="k">return</span> <span class="n">sol1</span><span class="p">,</span> <span class="n">sol2</span>
 
 <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">c</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">r1</span><span class="p">,</span> <span class="n">r2</span> <span class="o">=</span> <span class="n">my_sol_eq2</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'sol1 :'</span><span class="p">,</span> <span class="n">r1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'sol2 :'</span><span class="p">,</span> <span class="n">r2</span><span class="p">)</span>
@@ -9555,7 +9824,14 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div style="width:95%; padding:5px 10px 5px; border-style:solid; border-width:0px 0px 0px 10px; border-color:#ff8c00; margin:20px 0px 10px 10px">
-    La funzione `my_sol_eq2` darà sempre la risposta corretta?
+<p>La funzione <code>my_sol_eq2</code> darà sempre la risposta corretta?<br/>
+ <br/>
+Verificate i casi seguenti:</p>
+<ul>
+<li>a = 0 </li>
+<li>a = 1, b = 3, c = 4  </li>
+<li>a=1, b=1e8, c=1</li>
+</ul>
 </div>
 </div>
 </div>
@@ -9604,7 +9880,7 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h5 id="Informazioni-ulteriori">Informazioni ulteriori<a class="anchor-link" href="#Informazioni-ulteriori">¶</a></h5><ul>
 <li><a href="http://docs.python.org/tutorial/controlflow.html#defining-functions">Python Tutorial: Section 4.6 Defining Functions</a></li>
-<li><a href="06_funzioni_moduli.ipynb">06_funzioni_moduli.ipynb</a></li>
+<li><a href="06_Funzioni_Moduli.ipynb">06_Funzioni_Moduli.ipynb</a></li>
 </ul>
 </div>
 </div>
@@ -9639,8 +9915,8 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">cube</span><span class="p">(</span><span class="n">var</span><span class="p">):</span>             <span class="c1"># specifico i parametri su cui agisce la funzione</span>
-    <span class="n">res</span> <span class="o">=</span> <span class="n">var</span><span class="o">**</span><span class="mi">3</span>           <span class="c1"># Calcolo il risultato valuto</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">cube</span><span class="p">(</span><span class="n">var</span><span class="p">):</span>             <span class="c1"># Specifico i parametri su cui agisce la funzione</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="n">var</span><span class="o">**</span><span class="mi">3</span>           <span class="c1"># Calcolo il risultato voluto</span>
     <span class="k">return</span> <span class="n">res</span>             <span class="c1"># Restituisco il risultato</span>
 </pre></div>
 </div>
@@ -9755,7 +10031,7 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Un-errore-comune:-stampare-un-valore-verso-ritornare-un-valore">Un errore comune: <em>stampare</em> un valore verso <em>ritornare</em> un valore<a class="anchor-link" href="#Un-errore-comune:-stampare-un-valore-verso-ritornare-un-valore">¶</a></h2><p>È un errore comune, quando si inizia, confondere <em>stampare</em> un valore con <em>ritornare</em> un valore. Nell'esempio seguente è difficile capire se la funzione <code>math.sin</code> ritorna un valore oppure lo stampa:</p>
+<h2 id="Un-errore-comune:-stampare-un-valore-invece-di-ritornare-un-valore">Un errore comune: <em>stampare</em> un valore invece di <em>ritornare</em> un valore<a class="anchor-link" href="#Un-errore-comune:-stampare-un-valore-invece-di-ritornare-un-valore">¶</a></h2><p>È un errore comune, quando si inizia, confondere <em>stampare</em> un valore con <em>ritornare</em> un valore. Nell'esempio seguente è difficile capire se la funzione <code>math.sin</code> ritorna un valore oppure lo stampa:</p>
 </div>
 </div>
 </div>
@@ -9834,6 +10110,17 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Testiamo la funzione:</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -9842,21 +10129,7 @@ Sappiamo che questo non è vero quindi da qualche parte c'è qualcosa che non to
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">Testiamo</span> <span class="n">la</span> <span class="n">funzione</span><span class="p">:</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">square1</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">square</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -10134,20 +10407,6 @@ Per verificarlo, assegniamo quanto restituito dalla funzione ad una variabile o 
 <li><strong>Tipo di cella</strong>: Code per Python, Markdown per testo</li>
 <li><strong><code>#</code> commento</strong>: Testo ignorato da Python, utile per spiegazioni</li>
 </ul>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-</div>
 </div>
 </div>
 </div>

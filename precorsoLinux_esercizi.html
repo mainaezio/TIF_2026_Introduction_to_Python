@@ -44,11 +44,11 @@ Per gli utenti Windows "Aprire un terminale" deve essere inteso come aprire un t
             <LI> Scegliete ''Salva con nome''. Il sistema vi propone una cartella in cui scaricare il file. Prendete nota di dove il file viene scaricato.
             <LI> Andate nella cartella home (<B>cd</B>)
             <LI> Create una nuova directory con il comando <B>mkdir precorso</B>
-            <LI> Spostate il file test_FileSystem.tar.gz dalla cartella in cui &egrave; stato scaricato alla cartella <B>precorso</B> (<B>mv</B>). Pu&ograve; essere utile usare indirizzi assoluti.
+            <LI> Spostate il file <B>test_FileSystem.tar.gz</B> dalla cartella in cui &egrave; stato scaricato alla cartella <B>precorso</B> (<B>mv</B>). Pu&ograve; essere utile usare indirizzi assoluti.
             <LI> Nella directory precorso, date il comando <B>tar -ztvf test_FileSystem.tar.gz</B><BR>
-                 Il sistema vi mostra i file contenuti nell'archivio test_FileSystem.tar.gz
+                 Il sistema vi mostra i file contenuti nell'archivio <B>test_FileSystem.tar.gz</B>
             <LI> Date il comando (in cosa differisce dal comando precedente?) <B>tar -zxvf test_FileSystem.tar.gz</B><BR>
-                 I file contenuti nell'archivio test_FileSystem.tar.gz vengono estratti e salvati localmente
+                 I file contenuti nell'archivio <B>test_FileSystem.tar.gz</B> vengono estratti e salvati localmente
             <LI> Verificate con <B>ls -al</B> quali file sia presenti nella cartella.<BR>
                  La risposta attesa &egrave;:
         <PRE>
@@ -84,17 +84,18 @@ Congratulazioni!<BR>
     <LI> Usate il comando <B>man</B> per cercare informazioni sul comando <B>rm</B>.
     <LI> Usate il comando <B>rm -rf</B> per eliminare la cartella <B>pippo</B>.
     <LI> Usate il comando <B>cd /</B> per spostarvi nella cartella base di tutto il filesystem.
-    <LI> Stampate sullo schermo,in formato esteso, l'elenco dei file contenuti nella cartella.
+    <LI> Stampate sullo schermo, in formato esteso, l'elenco dei file contenuti nella cartella.
     <LI> Spostatevi nella directory <B>/usr/bin</B> .
     <LI> Stampate sullo schermo l'elenco dei file contenuti nella cartella.
     <LI> Provate a cancellare uno dei file in <B>/usr/bin</B> usando il comando <B>rm</B>. Provate anche <B>rm -f</B>.
-    <LI> Provate a modificare il nome di uno dei file in /usr/bin usando il comando <B>mv</B>.
+    <LI> Provate a modificare il nome di uno dei file in <B>/usr/bin</B> usando il comando <B>mv</B>.
     <LI> Per capire perch&eacute; il sistema non vi permette di cancellare o rinominare un file in <B>/usr/bin</B>
         eseguite il comando <B>ls -al</B> e identificate l'owner dei file nell'output del comando.
     <LI> Spostatevi nella directory <B>/etc</B> .
-    <LI> Date il comando <B>cat shells</B> per vedere sullo schermo il contenuto del file /etc/shells.
+    <LI> Date il comando <B>cat shells</B> per vedere sullo schermo il contenuto del file <B>/etc/shells</B> (Il web pu&ograve; aiutare).
         Che informazione vi fornisce questo file?
-    <LI> Usando il comando <B>echo</B> provate ad aggiungere la linea "/bin/mysh" al fondo di shells
+    <LI> Usando il comando <B>echo</B> provate ad aggiungere la linea "/bin/mysh" al fondo di <B>shells</B>. Usate <B>ls -al shells</B>
+        per verificare chi &egrave; il proprietario del file.
 </UL>
 <P>
 &nbsp;
